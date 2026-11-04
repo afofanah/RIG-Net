@@ -1,0 +1,127 @@
+/home/claude/ebola_gnn/paper_science.py:155: RuntimeWarning: Mean of empty slice
+  Rb = np.nanmean(S["R"], 1)                              # per week mean R
+/home/claude/ebola_gnn/paper_science.py:156: RuntimeWarning: Mean of empty slice
+  e = np.array([np.nanmean(np.abs(S["MU"][h] - S["YT"][h]), 1) for h in range(H_OUT)])  # [H,T]
+/home/claude/ebola_gnn/paper_science.py:159: RuntimeWarning: Mean of empty slice
+  v = np.array([np.nanmean(e[h][mask]) for h in range(H_OUT)])
+{
+ "spatial": {
+  "WA2014": {
+   "regions_sequenced": 37,
+   "N": 61,
+   "corr_R_with_incidence": 0.6781270419814253,
+   "corr_rho_with_gaincases": -0.32020095187731357
+  },
+  "DRC1820": {
+   "regions_sequenced": 24,
+   "N": 29,
+   "corr_R_with_incidence": 0.6849961065635168,
+   "corr_rho_with_gaincases": -0.23152709359605908
+  }
+ },
+ "genomic": {
+  "WA2014": {
+   "edges": 156,
+   "rho_distance": -0.22629273897966906,
+   "rho_coactivity": 0.012763788810829133,
+   "median_linked_distance_km": 171.9415512084961,
+   "frac_links_beyond_200km": 0.4358974358974359
+  },
+  "DRC1820": {
+   "edges": 129,
+   "rho_distance": -0.11865958361115414,
+   "rho_coactivity": 0.1338629973553596,
+   "median_linked_distance_km": 82.07365417480469,
+   "frac_links_beyond_200km": 0.20155038759689922
+  }
+ },
+ "theory": {
+  "rho_at_R1": 1.0000000000000013,
+  "lipschitz_violations": 0,
+  "lipschitz_samples": 600
+ },
+ "prob": {
+  "WA2014": {
+   "coverage90": 0.8797814207650273,
+   "WIS": 9.269043791697698,
+   "mean_alpha": 0.7217668890953064
+  },
+  "DRC1820": {
+   "coverage90": 0.9391163793103449,
+   "WIS": 1.003028401682639,
+   "mean_alpha": 0.7059465646743774
+  }
+ },
+ "extra_metrics": [
+  {
+   "dataset": "WA2014",
+   "model": "RIG-Net-GI",
+   "MASE": 1.4396566925708145,
+   "sMAPE": 50.056342084231446,
+   "peak_week_err": 3.358974358974359
+  },
+  {
+   "dataset": "WA2014",
+   "model": "MTGNN",
+   "MASE": 1.3946914644936814,
+   "sMAPE": 65.70831765564127,
+   "peak_week_err": 2.948717948717949
+  },
+  {
+   "dataset": "WA2014",
+   "model": "N-BEATS",
+   "MASE": 1.431586083299808,
+   "sMAPE": 66.01194967529142,
+   "peak_week_err": 2.871794871794872
+  },
+  {
+   "dataset": "WA2014",
+   "model": "EpiGNN",
+   "MASE": 1.4723440971003379,
+   "sMAPE": 65.18166982345642,
+   "peak_week_err": 2.7948717948717947
+  },
+  {
+   "dataset": "WA2014",
+   "model": "Naive",
+   "MASE": 1.8087673952386956,
+   "sMAPE": 37.25996102597879,
+   "peak_week_err": 1.0
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "RIG-Net-GI",
+   "MASE": 1.4911967066235055,
+   "sMAPE": 24.392254081125504,
+   "peak_week_err": 1.9333333333333333
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "MTGNN",
+   "MASE": 1.5660153892931732,
+   "sMAPE": 83.76110435939962,
+   "peak_week_err": 3.1333333333333333
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "N-BEATS",
+   "MASE": 1.5847377165314804,
+   "sMAPE": 83.05902421848418,
+   "peak_week_err": 2.3333333333333335
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "EpiGNN",
+   "MASE": 1.5758212386044386,
+   "sMAPE": 83.13035260946633,
+   "peak_week_err": 1.2
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "Naive",
+   "MASE": 1.719609371511639,
+   "sMAPE": 23.128230330546494,
+   "peak_week_err": 1.0
+  }
+ ]
+}

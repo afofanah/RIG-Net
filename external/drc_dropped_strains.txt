@@ -1,0 +1,34 @@
+MAN081 # second sample from same patient
+MAN082 # second sample from same patient
+MAN083 # second sample from same patient
+BTB20594 # identical to MAN5923
+KAT8927 # identical to MAN5923
+MAN6906 # identical to MAN5923
+KAT9459 # identical to MAN5923
+BTB24973 # identical to MAN5923
+MAN7450 # identical to MAN5923
+MAN7600 # identical to MAN5923
+MAN7716 # identical to MAN5923
+MAN7787 # identical to MAN5923
+BTB25101 # identical to MAN5923
+MAN7856 # identical to MAN5923
+MAN7882 # identical to MAN5923
+BEN31891 # identical to MAN5923
+BTB24970 # identical to MAN5923
+MAM1133 #low coverage
+BTB41015 #low coverage
+KOM2796 #low coverage
+KOM2902 #low coverage
+BIA089 #low coverage
+MAN9940 #low coverage
+MAN9412 #low coverage
+BTB42175 #low coverage
+MWG016 #low coverage
+BEN39817 #low coverage
+MAN11190 #low coverage
+MAN13130 #low coverage
+BEN39817 #low coverage
+BEN39859 #low coverage 
+BTB24969 #duplicate of BTB24630
+KOM2844 #duplicate of KOM2823
+MAN13464 #low coverage

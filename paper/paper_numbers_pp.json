@@ -1,0 +1,16 @@
+{
+ "WA2014": {
+  "affected_regions": 58,
+  "window_area_km2": 337018.5252089448,
+  "median_nnd_km": 58.4602591304648,
+  "frac_r_clustered": 1.0,
+  "max_L_minus_r": 72.46040441598757
+ },
+ "DRC1820": {
+  "affected_regions": 29,
+  "window_area_km2": 59600.0801111163,
+  "median_nnd_km": 20.402377216129004,
+  "frac_r_clustered": 1.0,
+  "max_L_minus_r": 55.92340795442956
+ }
+}

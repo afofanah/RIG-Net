@@ -1,0 +1,26 @@
+{
+ "Guinea": {
+  "national_MAE_h1": 44.42155101010576,
+  "national_MAE_h1_MTGNN": 31.72547043280469,
+  "weeks_scored": 18,
+  "coverage90_normal_approx": 0.7222222222222222
+ },
+ "Liberia": {
+  "national_MAE_h1": 176.0741461854842,
+  "national_MAE_h1_MTGNN": 162.0763870587414,
+  "weeks_scored": 18,
+  "coverage90_normal_approx": 0.7777777777777778
+ },
+ "Sierra Leone": {
+  "national_MAE_h1": 168.62712749342123,
+  "national_MAE_h1_MTGNN": 198.5461004624764,
+  "weeks_scored": 18,
+  "coverage90_normal_approx": 0.7777777777777778
+ },
+ "DR Congo": {
+  "national_MAE_h1": 10.836480634262747,
+  "national_MAE_h1_MTGNN": 17.738469226285815,
+  "weeks_scored": 48,
+  "coverage90_normal_approx": 0.875
+ }
+}

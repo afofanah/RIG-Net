@@ -1,0 +1,73 @@
+{
+ "validation": {
+  "GIN": {
+   "overlap_weeks": 24,
+   "pearson": 0.928817822097407,
+   "our_total": 1582.0888671875,
+   "who_total": 1571.0,
+   "ratio": 1.0070584768857416
+  },
+  "LBR": {
+   "overlap_weeks": 23,
+   "pearson": 0.19830710686775002,
+   "our_total": 6937.65087890625,
+   "who_total": 4277.0,
+   "ratio": 1.62208344140899
+  },
+  "SLE": {
+   "overlap_weeks": 24,
+   "pearson": 0.8199965187461904,
+   "our_total": 5051.0,
+   "who_total": 4709.0,
+   "ratio": 1.0726268846888936
+  }
+ },
+ "source_discrepancy": {
+  "GIN": {
+   "weeks": 8,
+   "mean_abs_diff": 5.875,
+   "mean_rel_diff_pct": 5.44824841240544
+  },
+  "LBR": {
+   "weeks": 7,
+   "mean_abs_diff": 117.14285714285714,
+   "mean_rel_diff_pct": 82.62492776989542
+  },
+  "SLE": {
+   "weeks": 8,
+   "mean_abs_diff": 142.25,
+   "mean_rel_diff_pct": 48.73788254841542
+  }
+ },
+ "model_vs_floor": {
+  "GIN": {
+   "model_MAE": 44.4,
+   "source_disagreement": 5.875,
+   "ratio": 7.557446808510638
+  },
+  "LBR": {
+   "model_MAE": 176.1,
+   "source_disagreement": 117.14285714285714,
+   "ratio": 1.5032926829268294
+  },
+  "SLE": {
+   "model_MAE": 168.6,
+   "source_disagreement": 142.25,
+   "ratio": 1.1852372583479789
+  }
+ },
+ "capital_share": {
+  "Conakry": {
+   "weeks": 30,
+   "share_pct": 14.973882762623331
+  },
+  "Montserrado": {
+   "weeks": 27,
+   "share_pct": 46.8144690781797
+  },
+  "Freetown": {
+   "weeks": 18,
+   "share_pct": 11.078185548210623
+  }
+ }
+}

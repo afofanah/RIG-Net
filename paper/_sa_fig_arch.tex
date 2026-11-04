@@ -1,0 +1,156 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{amsmath,amssymb,xcolor,tikz}
+\usetikzlibrary{positioning,arrows.meta,calc,shapes.geometric,fit,backgrounds,bending}
+\begin{document}
+\definecolor{boxcol}{RGB}{52,86,122}%
+\begin{tikzpicture}[
+  font=\small, x=1cm, y=1cm,
+  >={Stealth[length=3.8mm, width=2.8mm]},
+  nd/.style={circle, draw=black!65, line width=0.9pt, inner sep=0pt, minimum size=9mm,
+             fill=white, font=\large},
+  foc/.style={nd, draw=black, line width=1.4pt, fill=yellow!25},
+  cell/.style={draw=black!50, minimum size=3.2mm, inner sep=0pt},
+  lbl/.style={font=\large, text=black!75, inner sep=2pt},
+  sml/.style={font=\normalsize, text=black!70, inner sep=2pt},
+  shp/.style={font=\normalsize, text=boxcol},
+  ttl/.style={font=\large\bfseries},
+  a/.style={->, draw=black!80, line width=1.6pt},
+  stg/.style={draw=boxcol, dashed, dash pattern=on 2.2pt off 1.6pt, rounded corners=4pt,
+              inner sep=8pt, line width=1.2pt}
+]
+% feature vector glyph: #1 anchor, #2 colour, #3 label
+\newcommand{\fvec}[3]{%
+  \foreach \q in {0,1,2,3}
+    \node[cell, fill=#2!\the\numexpr20+18*\q\relax] at ($#1+(0.32*\q,0)$) {};
+  \node[sml, anchor=west] at ($#1+(1.30,0)$) {#3};}
+
+%% ================= (a) input: a graph whose nodes carry 6 weeks of counts =================
+\begin{scope}[shift={(0,0)}]
+  \node[foc] (i) at (0,0.95) {$i$};  \node[nd] (j) at (1.65,1.35) {$j$};
+  \node[nd] (k) at (2.15,0.05) {$k$};\node[nd] (l) at (0.85,-0.55) {$l$};
+  \node[nd] (m) at (-0.85,0.15) {$m$};
+  \draw[black!35, line width=0.8pt] (i)--(j) (j)--(k) (i)--(l) (k)--(l) (l)--(m) (i)--(m);
+  % a six-week series hanging off node i
+  \draw[black!45, line width=0.7pt] (-0.75,2.35) -- (0.75,2.35);
+  \foreach \q/\hh in {0/0.18,1/0.30,2/0.22,3/0.46,4/0.62,5/0.40}
+    \draw[blue!65, line width=1.6pt] (-0.70+0.28*\q,2.35) -- (-0.70+0.28*\q,2.35+\hh);
+  \draw[black!70, dash pattern=on 1.6pt off 1.2pt, line width=1.3pt] (0,2.30) -- (i.north);
+  \node[sml, anchor=south] at (0,3.05) {$y_i(t{-}6{:}t{-}1)$};
+  \node[sml, anchor=north, text width=64mm, align=center] at (0.65,-2.55)
+    {$\mathbf{x}_i=\mathrm{std}\big(\log(1{+}y_i(t{-}6{:}t{-}1))\big)\in\mathbb{R}^{6}$\\[2pt]
+     $\mathbf{u}_i(t{-}1)\in\mathbb{R}^{3}$, \ $A^{\mathrm{geo}},A^{\mathrm{gen}}_{<c}$, \ $\mathbf{e}_i$};
+\end{scope}
+\node[ttl] at (0.65,-1.35) {(a) inputs on the region graph $\mathcal{G}$};
+
+
+%% ================= (b) encoder: every node gets a state vector =================
+\begin{scope}[shift={(6.6,0)}]
+  \node[foc] (i2) at (0,0.95) {$i$};  \node[nd] (j2) at (1.65,1.35) {$j$};
+  \node[nd] (k2) at (2.15,0.05) {$k$};\node[nd] (l2) at (0.85,-0.55) {$l$};
+  \node[nd] (m2) at (-0.85,0.15) {$m$};
+  \draw[black!35, line width=0.8pt] (i2)--(j2) (j2)--(k2) (i2)--(l2) (k2)--(l2) (l2)--(m2) (i2)--(m2);
+  \fvec{(-0.45,2.05)}{blue}{$\mathbf{h}_i$}
+  \draw[black!70, dash pattern=on 1.6pt off 1.2pt, line width=1.3pt] (0,1.95) -- (i2.north);
+\end{scope}
+\node[ttl, text width=42mm, align=center] at (7.2,-2.1) {(b) shared encoder\\[-1pt]{\normalsize\color{black!70} GRU $\|$ dil.\ conv $\|$ $\mathbf{e}_i$}};
+\node[shp] at (7.2,-3.0) {$\mathbf{h}\in\mathbb{R}^{B\times N\times d}$};
+\draw[a] (2.9,0.45) -- (5.3,0.45);
+
+%% ================= (c) four edge types on the same node set, gated into one =================
+\begin{scope}[shift={(13.6,0)}]
+  \node[foc] (i3) at (0,0.95) {$i$};  \node[nd] (j3) at (1.65,1.35) {$j$};
+  \node[nd] (k3) at (2.15,0.05) {$k$};\node[nd] (l3) at (0.85,-0.55) {$l$};
+  \node[nd, fill=black!10] (m3) at (-0.85,0.15) {$m$};
+  \draw[teal!75,   line width=1.3pt] (i3)--(j3) (k3)--(l3);
+  \draw[blue!65,   line width=1.0pt, bend left=16] (i3) to (l3);
+  \draw[orange!85, line width=1.0pt, bend right=16] (j3) to (k3);
+  \draw[purple!75, line width=2.4pt, bend left=20] (i3) to (k3);
+  \draw[black!30,  line width=0.8pt] (l3)--(m3) (i3)--(m3);
+\end{scope}
+\begin{scope}[on background layer]
+  \node[stg, draw=teal!70!black, fit=(i3)(j3)(k3)(l3)(m3)] {};
+\end{scope}
+\node[ttl, text=teal!55!black] at (14.2,-2.1) {(c) four edge types, one gate};
+\node[sml, text width=60mm, align=center] at (14.2,-2.95)
+  {\textcolor{teal!75}{geographic}\ \textcolor{blue!65}{learned}\ \textcolor{orange!85}{attention}\ \textcolor{purple!75}{\textbf{genomic}}\\[1pt]
+   $A=\sum_k\pi_{ik}A^k$, \ $\pi_i=\mathrm{softmax}(W_\pi\mathbf{h}_i)$ \ (Fig.~3)};
+\draw[a] (9.9,0.45) -- (12.3,0.45);
+
+%% ================= (d) message passing at one node =================
+\begin{scope}[shift={(21.5,0.55)}]
+  \node[foc] (ci) at (0,0) {$i$};
+  \node[nd] (cj) at (-2.05,1.25) {$j$};
+  \node[nd] (ck) at (-2.05,-1.25) {$k$};
+  \node[nd] (cl) at (2.05,-1.25) {$l$};
+  \draw[a, draw=teal!75, line width=2.1pt] (cj) -- (ci);
+  \draw[a, draw=teal!75, line width=2.1pt] (ck) -- (ci);
+  \draw[a, draw=teal!75, line width=1.6pt] (cl) -- (ci);
+  \node[sml, anchor=south east, fill=white, inner sep=1.5pt] at (-0.42,0.52) {$A_{ij}\mathbf{g}_j$};
+  \node[sml, anchor=north east, fill=white, inner sep=1.5pt] at (-0.42,-0.52) {$A_{ik}\mathbf{g}_k$};
+  \node[sml, anchor=north west, fill=white, inner sep=1.5pt] at (0.42,-0.52) {$A_{il}\mathbf{g}_l$};
+  \fvec{(-0.45,1.75)}{teal}{$\mathbf{g}_i$}
+  \draw[black!70, dash pattern=on 1.6pt off 1.2pt, line width=1.3pt] (0,1.65) -- (ci.north);
+\end{scope}
+\node[ttl] at (21.5,-2.3) {(d) message passing $\times2$};
+\node[sml, text width=50mm, align=center] at (21.5,-3.0)
+  {$\mathbf{g}_i\leftarrow\mathrm{LN}\big(\mathbf{g}_i+\mathrm{GELU}(W\!\sum_j A_{ij}\mathbf{g}_j)\big)$};
+\draw[a] (16.4,0.45) -- (19.2,0.45);
+
+%% ================= (e) per-node heads read [h || g] =================
+\begin{scope}[shift={(1.9,-6.7)}]
+  \node[foc] (ei) at (0,0) {$i$};
+  \fvec{(-1.95,1.25)}{blue}{}
+  \fvec{(-0.75,1.25)}{teal}{}
+  \node[sml, anchor=west] at (0.45,1.25) {$\mathbf{r}_i=[\mathbf{h}_i\,\|\,\mathbf{g}_i]$};
+  \draw[black!70, dash pattern=on 1.6pt off 1.2pt, line width=1.3pt] (-0.6,1.1) -- (ei.north);
+  \node[sml, anchor=west, text width=44mm] (ehd) at (1.15,0.0)
+    {$R_i(t{+}h)=R_{\max}\sigma(\cdot)e^{-\boldsymbol{\beta}^{\!\top}\mathbf{u}_i}$\\[1pt]$\rho_i,\ \iota_i,\ \delta_i(h),\ \alpha_i$};
+  \draw[a, draw=orange!85, line width=1.8pt] (ei.east) -- (1.05,0);
+\end{scope}
+\begin{scope}[on background layer]
+  \node[stg, draw=orange!80!black, fit=(ei)(ehd)] {};
+\end{scope}
+\node[ttl, text=orange!75!black] at (3.4,-8.7) {(e) per-node epidemiological heads};
+\node[shp] at (3.4,-9.3) {$\mathbf{r}\in\mathbb{R}^{B\times N\times 2d}$, \ $R,\delta\in\mathbb{R}^{B\times N\times H}$};
+\draw[a, draw=violet!70, dashed, line width=1.7pt] (23.9,0.55) -- (25.1,0.55) -- (25.1,-4.55) -- (1.9,-4.55) -- (1.9,-5.5);
+\node[sml, anchor=south, fill=white, inner sep=2pt, text=violet!75] at (11.0,-4.5) {both $\mathbf{h}_i$ (pre-) and $\mathbf{g}_i$ (post-message-passing) reach every head};
+
+%% ================= (f) renewal rollout over the graph =================
+\begin{scope}[shift={(12.0,-6.7)}]
+  \node[foc, fill=red!45] (ri) at (0,0) {$i$};
+  \node[nd, fill=red!18] (rj) at (1.6,0.75) {$j$};
+  \node[nd, fill=red!32] (rk) at (2.0,-0.65) {$k$};
+  \node[nd, fill=red!55] (rl) at (0.55,-1.15) {$l$};
+  \node[nd, fill=red!10] (rm) at (-1.35,-0.35) {$m$};
+  \draw[a, draw=red!70, line width=2.1pt] (rl) -- node[sml, anchor=north east, inner sep=3pt, pos=0.70, fill=white] (flab) {$\rho_iA_{il}P_l$} (ri);
+  \draw[a, draw=red!70, line width=1.7pt] (rk) -- (ri);
+  \draw[black!30, line width=0.8pt] (ri)--(rj) (rj)--(rk) (rl)--(rm) (ri)--(rm);
+  \draw[a, draw=red!70, line width=1.2pt] (ri) to[out=120,in=60,looseness=6]
+    node[sml, above, inner sep=2pt] (sloop) {$(1{-}\rho_i)P_i$} (ri);
+\end{scope}
+\begin{scope}[on background layer]
+  \node[stg, draw=red!70!black, fit=(ri)(rj)(rk)(rl)(rm)(sloop)(flab)] {};
+\end{scope}
+\node[ttl, text=red!60!black] at (12.6,-9.15) {(f) renewal rollout, $h=1\ldots4$};
+\node[sml, text width=62mm, align=center] at (12.6,-9.9)
+  {$P_i=\sum_s w_s y_i(t{-}s)$, \ $\mu_i=(R_iQ_i+\iota_i)e^{\delta_i}$;\ \ $\hat y\!\leftarrow\!\mu$ feeds the next step (Fig.~4)};
+\draw[a] (7.9,-6.7) -- (9.9,-6.7);
+
+%% ================= (g) NB head: a distribution per node =================
+\begin{scope}[shift={(20.6,-6.7)}]
+  \node[foc, fill=green!35] (ni) at (0,0) {$i$};
+  \node[nd, fill=green!22] (nj) at (1.6,0.75) {$j$};
+  \node[nd, fill=green!30] (nk) at (2.0,-0.65) {$k$};
+  \node[nd, fill=green!14] (nl) at (0.55,-1.15) {$l$};
+  \node[nd, fill=green!40] (nm) at (-1.35,-0.35) {$m$};
+  \draw[black!30, line width=0.8pt] (ni)--(nj) (nj)--(nk) (ni)--(nl) (nk)--(nl) (nl)--(nm) (ni)--(nm);
+  \foreach \q/\hh in {0/0.12,1/0.34,2/0.58,3/0.40,4/0.20,5/0.09}
+    \draw[green!45!black, line width=1.8pt] (-0.75+0.30*\q,1.35) -- (-0.75+0.30*\q,1.35+\hh);
+  \draw[black!70, dash pattern=on 1.6pt off 1.2pt, line width=1.3pt] (0,1.30) -- (ni.north);
+  \node[sml, anchor=south] at (0.0,2.25) {$y\sim\mathrm{NegBin}(\mu_i,\alpha_i)$};
+\end{scope}
+\node[ttl, text=green!40!black] at (21.0,-8.7) {(g) negative-binomial head};
+\node[shp] at (21.0,-9.3) {$\hat{\mathbf{y}}\in\mathbb{R}^{B\times H\times N}$};
+\draw[a] (16.6,-6.7) -- (18.6,-6.7);
+\end{tikzpicture}%
+\end{document}

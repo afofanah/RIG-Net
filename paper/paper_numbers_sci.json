@@ -1,0 +1,130 @@
+{
+ "spatial": {
+  "WA2014": {
+   "regions_sequenced": 37,
+   "N": 61,
+   "corr_R_with_incidence": 0.6781270419814253,
+   "corr_rho_with_gaincases": -0.29936541512427284
+  },
+  "DRC1820": {
+   "regions_sequenced": 24,
+   "N": 29,
+   "corr_R_with_incidence": 0.6849961065635168,
+   "corr_rho_with_gaincases": -0.19014778325123147
+  }
+ },
+ "genomic": {
+  "WA2014": {
+   "genomic_edges": 156,
+   "geographic_edges": 215,
+   "median_genomic_km": 171.9415512084961,
+   "median_geographic_km": 96.11210632324219,
+   "frac_genomic_edges_not_in_geo_graph": 0.6410256410256411,
+   "frac_genomic_edges_beyond_200km": 0.4358974358974359,
+   "rho_linkage_distance": -0.22629273897966906
+  },
+  "DRC1820": {
+   "genomic_edges": 129,
+   "geographic_edges": 118,
+   "median_genomic_km": 82.07365417480469,
+   "median_geographic_km": 51.20844078063965,
+   "frac_genomic_edges_not_in_geo_graph": 0.6356589147286822,
+   "frac_genomic_edges_beyond_200km": 0.20155038759689922,
+   "rho_linkage_distance": -0.11865958361115414
+  }
+ },
+ "theory": {
+  "frac_R_below_1_WA2014": 0.4488680718188915,
+  "frac_R_below_1_DRC1820": 0.9256254225828262,
+  "rho_at_R1": 1.0000000000000013,
+  "block_amplification_spearman": -0.06517826797650067,
+  "region_blocks_above_contraction_term": 149,
+  "n_region_blocks": 195,
+  "lipschitz_violations": 0,
+  "lipschitz_samples": 600
+ },
+ "prob": {
+  "WA2014": {
+   "coverage90": 0.8797814207650273,
+   "WIS": 9.269043791697698,
+   "mean_alpha": 0.7217668890953064
+  },
+  "DRC1820": {
+   "coverage90": 0.9391163793103449,
+   "WIS": 1.003028401682639,
+   "mean_alpha": 0.7059465646743774
+  }
+ },
+ "extra_metrics": [
+  {
+   "dataset": "WA2014",
+   "model": "RIG-Net-GI",
+   "MASE": 1.4565949334028994,
+   "sMAPE": 54.77991803971811,
+   "peak_week_err": 3.58974358974359
+  },
+  {
+   "dataset": "WA2014",
+   "model": "MTGNN",
+   "MASE": 1.3950008881883205,
+   "sMAPE": 65.62712168513481,
+   "peak_week_err": 3.1794871794871793
+  },
+  {
+   "dataset": "WA2014",
+   "model": "N-BEATS",
+   "MASE": 1.4278197696605568,
+   "sMAPE": 66.04258571684234,
+   "peak_week_err": 3.051282051282051
+  },
+  {
+   "dataset": "WA2014",
+   "model": "EpiGNN",
+   "MASE": 1.4806206681617253,
+   "sMAPE": 65.11240693050954,
+   "peak_week_err": 3.1794871794871793
+  },
+  {
+   "dataset": "WA2014",
+   "model": "Naive",
+   "MASE": 1.8087673952386956,
+   "sMAPE": 37.25996102597879,
+   "peak_week_err": 1.0
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "RIG-Net-GI",
+   "MASE": 1.5067966614068642,
+   "sMAPE": 25.71072049836521,
+   "peak_week_err": 2.0
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "MTGNN",
+   "MASE": 1.5683534552268192,
+   "sMAPE": 84.16107267483326,
+   "peak_week_err": 2.1333333333333333
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "N-BEATS",
+   "MASE": 1.5877758585158994,
+   "sMAPE": 83.0566836116334,
+   "peak_week_err": 2.066666666666667
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "EpiGNN",
+   "MASE": 1.5643663709560434,
+   "sMAPE": 83.2404926744679,
+   "peak_week_err": 2.3333333333333335
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "Naive",
+   "MASE": 1.719609371511639,
+   "sMAPE": 23.128230330546494,
+   "peak_week_err": 1.0
+  }
+ ]
+}

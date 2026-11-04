@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/claude/ebola_gnn/paper_results.py", line 88, in <module>
+    main()
+  File "/home/claude/ebola_gnn/paper_results.py", line 54, in main
+    betas.append(F.softplus(w.model.beta_raw).numpy()); gates.append(o["pi"].mean((0, 1)).numpy()); rhos.append(float(o["rho"].mean()))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.

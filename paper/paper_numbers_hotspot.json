@@ -1,0 +1,38 @@
+{
+ "WA2014": {
+  "n_regions": 61,
+  "hot": [
+   "Forecariah",
+   "Bomi",
+   "Bonthe",
+   "Kambia",
+   "Kono",
+   "Moyamba",
+   "Port Loko",
+   "Tonkolili",
+   "W. Area Rural",
+   "W. Area Urban"
+  ],
+  "cold_n": 12,
+  "not_sig_n": 39,
+  "hot_case_share": 0.3743894398212433
+ },
+ "DRC1820": {
+  "n_regions": 29,
+  "hot": [
+   "Beni",
+   "Biena",
+   "Butembo",
+   "Kalunguta",
+   "Katwa",
+   "Mabalako",
+   "Mandima",
+   "Mutwanga",
+   "Oicha",
+   "Vuhovi"
+  ],
+  "cold_n": 0,
+  "not_sig_n": 19,
+  "hot_case_share": 0.8698788285255432
+ }
+}

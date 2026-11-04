@@ -1,0 +1,58 @@
+{
+ "Guinea": {
+  "top_sources": [
+   "Macenta",
+   "Conakry",
+   "Coyah"
+  ],
+  "within_country_expected_cases": 388.7564766196821,
+  "total_outgoing": 611.6495745675577,
+  "cross_border_share": 0.3644130678999708,
+  "rank_corr_with_observed": 0.7743611727150391,
+  "best_lag_weeks": -1,
+  "corr_at_best_lag": 0.6244870672580893,
+  "corr_at_lag0": 0.536020628913891
+ },
+ "Liberia": {
+  "top_sources": [
+   "Montserrado",
+   "Margibi",
+   "Bong"
+  ],
+  "within_country_expected_cases": 1622.4560370324175,
+  "total_outgoing": 2380.9533974075907,
+  "cross_border_share": 0.3185687553570068,
+  "rank_corr_with_observed": 0.7499999999999999,
+  "best_lag_weeks": 1,
+  "corr_at_best_lag": 0.05557166641702978,
+  "corr_at_lag0": 0.04811875064097496
+ },
+ "Sierra Leone": {
+  "top_sources": [
+   "W. Area Rural",
+   "W. Area Urban",
+   "Port Loko"
+  ],
+  "within_country_expected_cases": 1556.0776400242967,
+  "total_outgoing": 2305.602613989384,
+  "cross_border_share": 0.32508853408531846,
+  "rank_corr_with_observed": 0.4813186813186813,
+  "best_lag_weeks": -2,
+  "corr_at_best_lag": 0.391262130057837,
+  "corr_at_lag0": 0.06274099702455552
+ },
+ "DR Congo": {
+  "top_sources": [
+   "Katwa",
+   "Beni",
+   "Mabalako"
+  ],
+  "within_country_expected_cases": 764.3790996371272,
+  "total_outgoing": 764.3790996371272,
+  "cross_border_share": 0.0,
+  "rank_corr_with_observed": 0.8418468020941883,
+  "best_lag_weeks": -1,
+  "corr_at_best_lag": 0.4013060111866297,
+  "corr_at_lag0": 0.3860849021831771
+ }
+}

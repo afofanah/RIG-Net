@@ -1,0 +1,17 @@
+{
+ "peak_window_coverage": 7.549759780370625,
+ "offpeak_coverage": 34.316975696611614,
+ "pct_sequenced": 23.064858622449158,
+ "peak_week_coverage": 0.0,
+ "most_undersequenced": "Katwa",
+ "most_oversequenced": "Mandima",
+ "r2_cases_vs_genomes": 0.9236278032516652,
+ "zones_with_genomes": 25,
+ "zones": 29,
+ "onset_to_collection_median_days": 5.0,
+ "onset_to_collection_iqr": [
+  2.0,
+  8.0
+ ],
+ "n_lag": 651
+}

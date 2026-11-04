@@ -1,0 +1,109 @@
+{
+ "stats": {
+  "genomes": 1610,
+  "variable_sites": 2272,
+  "mapped_to_nodes": 1385,
+  "unmapped_locations": [
+   "",
+   "?"
+  ]
+ },
+ "folds": {
+  "2014-09-14": {
+   "genomes_before_cutoff": 353,
+   "regions_with_genomes": 29,
+   "edges": 68,
+   "top_links": [
+    [
+     "SLE:Kenema",
+     "SLE:Kailahun",
+     16.05
+    ],
+    [
+     "SLE:Kailahun",
+     "GIN:Conakry",
+     14.18
+    ],
+    [
+     "SLE:Kailahun",
+     "SLE:Kambia",
+     7.46
+    ],
+    [
+     "SLE:Bo",
+     "SLE:Kailahun",
+     5.3
+    ],
+    [
+     "GIN:Conakry",
+     "SLE:Kenema",
+     4.98
+    ]
+   ]
+  },
+  "2014-10-19": {
+   "genomes_before_cutoff": 598,
+   "regions_with_genomes": 38,
+   "edges": 137,
+   "top_links": [
+    [
+     "SLE:Kenema",
+     "SLE:Kailahun",
+     15.88
+    ],
+    [
+     "GIN:Conakry",
+     "SLE:Kailahun",
+     11.24
+    ],
+    [
+     "SLE:Bo",
+     "SLE:Kailahun",
+     4.23
+    ],
+    [
+     "SLE:Kenema",
+     "GIN:Conakry",
+     4.05
+    ],
+    [
+     "SLE:Kambia",
+     "SLE:Kailahun",
+     3.05
+    ]
+   ]
+  },
+  "2014-11-23": {
+   "genomes_before_cutoff": 776,
+   "regions_with_genomes": 42,
+   "edges": 156,
+   "top_links": [
+    [
+     "SLE:Kailahun",
+     "SLE:Kenema",
+     15.85
+    ],
+    [
+     "SLE:Kailahun",
+     "GIN:Conakry",
+     11.0
+    ],
+    [
+     "SLE:Kailahun",
+     "SLE:Bo",
+     3.89
+    ],
+    [
+     "SLE:Kenema",
+     "GIN:Conakry",
+     3.88
+    ],
+    [
+     "LBR:Montserrado",
+     "SLE:Kailahun",
+     2.6
+    ]
+   ]
+  }
+ }
+}

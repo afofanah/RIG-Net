@@ -1,0 +1,4 @@
+  File "/home/claude/ebola_gnn/paper_science.py", line 75
+    R=Rf, A=A_acc / k, rho=rho / k, gate_gen=np.nanmean(gate_gen, 0), U=ds["U"])
+          ^^^^^^^^^^^
+SyntaxError: keyword argument repeated: A

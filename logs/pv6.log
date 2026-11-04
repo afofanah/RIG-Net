@@ -1,0 +1,73 @@
+/home/claude/ebola_gnn/paper_validity.py:243: Pandas4Warning: Starting with pandas version 4.0 all arguments of mean will be keyword-only.
+  norm = (mae / mae.min()).mean(1)
+{
+ "epiestim": {
+  "WA2014": {
+   "best_lag_weeks": 1,
+   "rho_at_best_lag": 0.26530781801215536,
+   "rho_at_lag0": 0.037639427327137674,
+   "n": 638,
+   "R_p5_p50_p95": [
+    0.3439250588417053,
+    1.0510022640228271,
+    1.4354437589645386
+   ],
+   "epiestim_p5_p50_p95": [
+    0.13900234110831192,
+    1.2359200312111562,
+    6.632803542447242
+   ],
+   "agree_above_below_1": 0.6285266457680251
+  },
+  "DRC1820": {
+   "best_lag_weeks": 1,
+   "rho_at_best_lag": 0.2097093660375645,
+   "rho_at_lag0": 0.0463439328911037,
+   "n": 363,
+   "R_p5_p50_p95": [
+    0.25122196674346925,
+    0.535888671875,
+    1.0930067658424376
+   ],
+   "epiestim_p5_p50_p95": [
+    0.29558112863069813,
+    1.529051987767584,
+    5.298013245033113
+   ],
+   "agree_above_below_1": 0.49586776859504134
+  }
+ },
+ "calibration": {
+  "WA2014": {
+   "mean_abs_calib_err": 0.21039929057616716,
+   "pit_ks": 0.15059282243169858
+  },
+  "DRC1820": {
+   "mean_abs_calib_err": 0.3091651542649727,
+   "pit_ks": 0.028564548582858784
+  }
+ },
+ "dose": {
+  "DRC1820|RIG-Net-GI gen25%": 1.2189631126821039,
+  "DRC1820|RIG-Net-GI gen50%": 1.225678071379661,
+  "DRC1820|RIG-Net-GI gen75%": 1.2339134253561492,
+  "DRC1820|RIG-Net-GI w/o genomic KL": 1.2277429302533462,
+  "DRC1820|RIG-Net-GI w/o genomic prior": 1.2176365802685416,
+  "WA2014|RIG-Net-GI gen25%": 11.243677934010824,
+  "WA2014|RIG-Net-GI gen50%": 11.682361761728922,
+  "WA2014|RIG-Net-GI gen75%": 11.697590351104736,
+  "WA2014|RIG-Net-GI w/o genomic KL": 11.717145072089302,
+  "WA2014|RIG-Net-GI w/o genomic prior": 12.066590732998318
+ },
+ "geo_sensitivity": {
+  "DRC1820|RIG-Net-GI geo s0.5 k6": 1.2389858365058897,
+  "DRC1820|RIG-Net-GI geo s1.0 k12": 1.2381738573312757,
+  "DRC1820|RIG-Net-GI geo s1.0 k3": 1.2418394498527046,
+  "DRC1820|RIG-Net-GI geo s2.0 k6": 1.2446455918252464,
+  "WA2014|RIG-Net-GI geo s0.5 k6": 11.733371416727701,
+  "WA2014|RIG-Net-GI geo s1.0 k12": 11.58109458287557,
+  "WA2014|RIG-Net-GI geo s1.0 k3": 12.461384296417236,
+  "WA2014|RIG-Net-GI geo s2.0 k6": 11.661608537038168
+ }
+}
+avg ranks: {'RIG-Net-GI': 4.05, 'MTGNN': 5.0, 'N-BEATS': 5.43, 'Cola-GNN': 6.0, 'iTransformer': 6.24, 'N-HiTS': 6.52, 'STID': 6.9, 'EpiGNN': 7.33, 'STAEformer': 8.05, 'DLinear': 8.05, 'PatchTST': 8.57, 'MepoGNN': 9.67, 'TimesNet': 12.95, 'Autoformer': 13.29, 'AGCRN': 13.62, 'TSMixer': 14.33}

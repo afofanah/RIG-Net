@@ -1,0 +1,140 @@
+{
+ "stats": {
+  "genomes": 852,
+  "variable_sites": 964,
+  "mapped_to_nodes": 822,
+  "unmapped_locations": [
+   "Unknown"
+  ]
+ },
+ "folds": {
+  "2019-02-24": {
+   "genomes_before_cutoff": 251,
+   "regions_with_genomes": 15,
+   "edges": 41,
+   "top_links": [
+    [
+     "Mabalako",
+     "Mandima",
+     7.45
+    ],
+    [
+     "Mabalako",
+     "Beni",
+     6.48
+    ],
+    [
+     "Beni",
+     "Mandima",
+     4.64
+    ],
+    [
+     "Katwa",
+     "Butembo",
+     4.06
+    ],
+    [
+     "Mabalako",
+     "Oicha",
+     3.19
+    ]
+   ]
+  },
+  "2019-04-28": {
+   "genomes_before_cutoff": 317,
+   "regions_with_genomes": 17,
+   "edges": 52,
+   "top_links": [
+    [
+     "Mabalako",
+     "Beni",
+     6.2
+    ],
+    [
+     "Mabalako",
+     "Mandima",
+     4.89
+    ],
+    [
+     "Katwa",
+     "Butembo",
+     3.5
+    ],
+    [
+     "Mabalako",
+     "Oicha",
+     3.12
+    ],
+    [
+     "Beni",
+     "Mandima",
+     3.03
+    ]
+   ]
+  },
+  "2019-07-07": {
+   "genomes_before_cutoff": 357,
+   "regions_with_genomes": 20,
+   "edges": 57,
+   "top_links": [
+    [
+     "Mabalako",
+     "Beni",
+     5.4
+    ],
+    [
+     "Mandima",
+     "Mabalako",
+     4.61
+    ],
+    [
+     "Butembo",
+     "Katwa",
+     3.37
+    ],
+    [
+     "Mabalako",
+     "Oicha",
+     2.94
+    ],
+    [
+     "Mandima",
+     "Beni",
+     2.81
+    ]
+   ]
+  },
+  "2019-09-15": {
+   "genomes_before_cutoff": 563,
+   "regions_with_genomes": 25,
+   "edges": 129,
+   "top_links": [
+    [
+     "Mandima",
+     "Kayna",
+     6.25
+    ],
+    [
+     "Mambasa",
+     "Mandima",
+     6.0
+    ],
+    [
+     "Mandima",
+     "Alimbongo",
+     4.04
+    ],
+    [
+     "Beni",
+     "Ariwara",
+     3.94
+    ],
+    [
+     "Mabalako",
+     "Beni",
+     3.6
+    ]
+   ]
+  }
+ }
+}

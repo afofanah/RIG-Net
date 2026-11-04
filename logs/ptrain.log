@@ -1,0 +1,54 @@
+WA2014   N-BEATS        best_val=15.723 @ep 32 (74 run, 1.9s)
+WA2014   AGCRN          best_val=16.375 @ep160 (202 run, 33.3s)
+WA2014   MTGNN          best_val=15.863 @ep 50 (92 run, 6.5s)
+WA2014   Cola-GNN       best_val=15.969 @ep 98 (140 run, 16.6s)
+WA2014   Autoformer     best_val=19.501 @ep 22 (64 run, 1.7s)
+WA2014   EpiGNN         best_val=16.296 @ep 51 (93 run, 2.5s)
+WA2014   STID           best_val=15.760 @ep 24 (66 run, 1.0s)
+WA2014   MepoGNN        best_val=19.332 @ep 34 (76 run, 1.5s)
+WA2014   DLinear        best_val=16.145 @ep150 (192 run, 0.9s)
+WA2014   N-HiTS         best_val=16.249 @ep 27 (69 run, 0.9s)
+WA2014   PatchTST       best_val=17.459 @ep  7 (49 run, 5.1s)
+WA2014   TimesNet       best_val=15.500 @ep118 (160 run, 5.6s)
+WA2014   TSMixer        best_val=18.115 @ep 19 (61 run, 0.6s)
+WA2014   STAEformer     best_val=16.533 @ep 36 (78 run, 17.4s)
+WA2014   iTransformer   best_val=16.896 @ep 12 (54 run, 1.9s)
+WA2014   MAST-Net       best_val=15.008 @ep279 (300 run, 26.0s)
+WA2014   RIG-Net-GI     best_val=15.618 @ep 37 (79 run, 6.5s)
+DRC1820  N-BEATS        best_val=2.357 @ep 27 (69 run, 0.9s)
+DRC1820  AGCRN          best_val=2.834 @ep219 (261 run, 15.4s)
+DRC1820  MTGNN          best_val=2.294 @ep 87 (129 run, 5.1s)
+DRC1820  Cola-GNN       best_val=2.324 @ep 80 (122 run, 5.1s)
+DRC1820  Autoformer     best_val=3.031 @ep 10 (52 run, 0.6s)
+DRC1820  EpiGNN         best_val=2.359 @ep 63 (105 run, 2.2s)
+DRC1820  STID           best_val=2.328 @ep 27 (69 run, 1.2s)
+DRC1820  MepoGNN        best_val=2.927 @ep 39 (81 run, 1.7s)
+DRC1820  DLinear        best_val=2.381 @ep299 (300 run, 1.7s)
+DRC1820  N-HiTS         best_val=2.303 @ep  8 (50 run, 0.7s)
+DRC1820  PatchTST       best_val=2.456 @ep 27 (69 run, 7.5s)
+DRC1820  TimesNet       best_val=2.844 @ep 21 (63 run, 1.3s)
+DRC1820  TSMixer        best_val=2.737 @ep 68 (110 run, 1.1s)
+DRC1820  STAEformer     best_val=2.338 @ep 63 (105 run, 16.9s)
+DRC1820  iTransformer   best_val=2.437 @ep  8 (50 run, 1.5s)
+DRC1820  MAST-Net       best_val=2.356 @ep 37 (79 run, 6.6s)
+DRC1820  RIG-Net-GI     best_val=2.341 @ep 10 (52 run, 3.9s)
+             best_epoch        best_val            sec       
+dataset         DRC1820 WA2014  DRC1820 WA2014 DRC1820 WA2014
+model                                                        
+AGCRN             219.0  160.0     2.83  16.37   15.44  33.27
+Autoformer         10.0   22.0     3.03  19.50    0.61   1.72
+Cola-GNN           80.0   98.0     2.32  15.97    5.11  16.60
+DLinear           299.0  150.0     2.38  16.14    1.69   0.92
+EpiGNN             63.0   51.0     2.36  16.30    2.19   2.47
+MAST-Net           37.0  279.0     2.36  15.01    6.58  26.01
+MTGNN              87.0   50.0     2.29  15.86    5.15   6.50
+MepoGNN            39.0   34.0     2.93  19.33    1.66   1.51
+N-BEATS            27.0   32.0     2.36  15.72    0.92   1.91
+N-HiTS              8.0   27.0     2.30  16.25    0.66   0.89
+PatchTST           27.0    7.0     2.46  17.46    7.52   5.12
+RIG-Net-GI         10.0   37.0     2.34  15.62    3.88   6.48
+STAEformer         63.0   36.0     2.34  16.53   16.87  17.39
+STID               27.0   24.0     2.33  15.76    1.20   1.01
+TSMixer            68.0   19.0     2.74  18.11    1.12   0.64
+TimesNet           21.0  118.0     2.84  15.50    1.25   5.56
+iTransformer        8.0   12.0     2.44  16.90    1.45   1.94

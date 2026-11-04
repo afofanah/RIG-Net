@@ -1,0 +1,309 @@
+dataset,model,phase,MAE
+WA2014,Naive,Peak (Oct-Nov 14),18.387135
+WA2014,Naive,Decline (Nov-Dec 14),13.377321
+WA2014,Naive,Tail (Jan-Feb 15),11.6744995
+WA2014,MA3,Peak (Oct-Nov 14),16.891348
+WA2014,MA3,Decline (Nov-Dec 14),13.707249
+WA2014,MA3,Tail (Jan-Feb 15),12.515976
+WA2014,N-BEATS,Peak (Oct-Nov 14),15.972923
+WA2014,N-BEATS,Decline (Nov-Dec 14),9.960954
+WA2014,N-BEATS,Tail (Jan-Feb 15),8.356325
+WA2014,AGCRN,Peak (Oct-Nov 14),19.971113
+WA2014,AGCRN,Decline (Nov-Dec 14),12.909948
+WA2014,AGCRN,Tail (Jan-Feb 15),10.030595
+WA2014,MTGNN,Peak (Oct-Nov 14),15.337081
+WA2014,MTGNN,Decline (Nov-Dec 14),9.796184
+WA2014,MTGNN,Tail (Jan-Feb 15),8.368767
+WA2014,Cola-GNN,Peak (Oct-Nov 14),16.891903
+WA2014,Cola-GNN,Decline (Nov-Dec 14),10.208665
+WA2014,Cola-GNN,Tail (Jan-Feb 15),7.9932895
+WA2014,Autoformer,Peak (Oct-Nov 14),18.161715
+WA2014,Autoformer,Decline (Nov-Dec 14),11.59986
+WA2014,Autoformer,Tail (Jan-Feb 15),8.665193
+WA2014,EpiGNN,Peak (Oct-Nov 14),16.638252
+WA2014,EpiGNN,Decline (Nov-Dec 14),10.180754
+WA2014,EpiGNN,Tail (Jan-Feb 15),8.739252
+WA2014,STID,Peak (Oct-Nov 14),18.465376
+WA2014,STID,Decline (Nov-Dec 14),9.588325
+WA2014,STID,Tail (Jan-Feb 15),8.448025
+WA2014,MepoGNN,Peak (Oct-Nov 14),22.034998
+WA2014,MepoGNN,Decline (Nov-Dec 14),12.001524
+WA2014,MepoGNN,Tail (Jan-Feb 15),8.205865
+WA2014,DLinear,Peak (Oct-Nov 14),18.10723
+WA2014,DLinear,Decline (Nov-Dec 14),9.882731
+WA2014,DLinear,Tail (Jan-Feb 15),8.475115
+WA2014,N-HiTS,Peak (Oct-Nov 14),17.524948
+WA2014,N-HiTS,Decline (Nov-Dec 14),10.536326
+WA2014,N-HiTS,Tail (Jan-Feb 15),8.298532
+WA2014,PatchTST,Peak (Oct-Nov 14),17.77982
+WA2014,PatchTST,Decline (Nov-Dec 14),11.117968
+WA2014,PatchTST,Tail (Jan-Feb 15),9.314057
+WA2014,TimesNet,Peak (Oct-Nov 14),17.826574
+WA2014,TimesNet,Decline (Nov-Dec 14),10.936407
+WA2014,TimesNet,Tail (Jan-Feb 15),9.75133
+WA2014,TSMixer,Peak (Oct-Nov 14),17.872282
+WA2014,TSMixer,Decline (Nov-Dec 14),11.082947
+WA2014,TSMixer,Tail (Jan-Feb 15),10.654844
+WA2014,STAEformer,Peak (Oct-Nov 14),17.812271
+WA2014,STAEformer,Decline (Nov-Dec 14),10.641643
+WA2014,STAEformer,Tail (Jan-Feb 15),8.911763
+WA2014,iTransformer,Peak (Oct-Nov 14),17.269014
+WA2014,iTransformer,Decline (Nov-Dec 14),10.598281
+WA2014,iTransformer,Tail (Jan-Feb 15),8.388074
+WA2014,MAST-Net,Peak (Oct-Nov 14),16.982306
+WA2014,MAST-Net,Decline (Nov-Dec 14),9.812201
+WA2014,MAST-Net,Tail (Jan-Feb 15),9.179407
+WA2014,RIG-Net,Peak (Oct-Nov 14),24.806057
+WA2014,RIG-Net,Decline (Nov-Dec 14),9.7269125
+WA2014,RIG-Net,Tail (Jan-Feb 15),9.413706
+WA2014,RIG-Net w/o renewal (direct head),Peak (Oct-Nov 14),19.038115
+WA2014,RIG-Net w/o renewal (direct head),Decline (Nov-Dec 14),10.093853
+WA2014,RIG-Net w/o renewal (direct head),Tail (Jan-Feb 15),11.062477
+WA2014,RIG-Net w/o geo graph,Peak (Oct-Nov 14),21.937227
+WA2014,RIG-Net w/o geo graph,Decline (Nov-Dec 14),9.922132
+WA2014,RIG-Net w/o geo graph,Tail (Jan-Feb 15),10.125591
+WA2014,RIG-Net w/o adaptive graph,Peak (Oct-Nov 14),23.749771
+WA2014,RIG-Net w/o adaptive graph,Decline (Nov-Dec 14),9.806695
+WA2014,RIG-Net w/o adaptive graph,Tail (Jan-Feb 15),9.380373
+WA2014,RIG-Net w/o dynamic graph,Peak (Oct-Nov 14),18.481558
+WA2014,RIG-Net w/o dynamic graph,Decline (Nov-Dec 14),9.827731
+WA2014,RIG-Net w/o dynamic graph,Tail (Jan-Feb 15),8.996493
+WA2014,RIG-Net w/o NB likelihood,Peak (Oct-Nov 14),18.666174
+WA2014,RIG-Net w/o NB likelihood,Decline (Nov-Dec 14),9.902522
+WA2014,RIG-Net w/o NB likelihood,Tail (Jan-Feb 15),9.594328
+WA2014,RIG-Net-S (post-hoc),Peak (Oct-Nov 14),20.474611
+WA2014,RIG-Net-S (post-hoc),Decline (Nov-Dec 14),9.465438
+WA2014,RIG-Net-S (post-hoc),Tail (Jan-Feb 15),8.596356
+WA2014,RIG-Net-GI,Peak (Oct-Nov 14),16.09351
+WA2014,RIG-Net-GI,Decline (Nov-Dec 14),10.057513
+WA2014,RIG-Net-GI,Tail (Jan-Feb 15),8.830236
+WA2014,RIG-Net-GI w/o genomic prior,Peak (Oct-Nov 14),17.439594
+WA2014,RIG-Net-GI w/o genomic prior,Decline (Nov-Dec 14),9.659699
+WA2014,RIG-Net-GI w/o genomic prior,Tail (Jan-Feb 15),8.508378
+WA2014,RIG-Net-GI w/o intervention,Peak (Oct-Nov 14),17.145788
+WA2014,RIG-Net-GI w/o intervention,Decline (Nov-Dec 14),10.171995
+WA2014,RIG-Net-GI w/o intervention,Tail (Jan-Feb 15),8.779417
+WA2014,RIG-Net-GI w/o genomic KL,Peak (Oct-Nov 14),16.177822
+WA2014,RIG-Net-GI w/o genomic KL,Decline (Nov-Dec 14),10.00847
+WA2014,RIG-Net-GI w/o genomic KL,Tail (Jan-Feb 15),8.923678
+WA2014,RIG-Net-GI tau=1,Peak (Oct-Nov 14),17.201889
+WA2014,RIG-Net-GI tau=1,Decline (Nov-Dec 14),9.600547
+WA2014,RIG-Net-GI tau=1,Tail (Jan-Feb 15),8.626685
+WA2014,RIG-Net-GI tau=4,Peak (Oct-Nov 14),15.982559
+WA2014,RIG-Net-GI tau=4,Decline (Nov-Dec 14),9.621448
+WA2014,RIG-Net-GI tau=4,Tail (Jan-Feb 15),8.632285
+WA2014,RIG-Net-GI Rmax=2.0,Peak (Oct-Nov 14),16.635883
+WA2014,RIG-Net-GI Rmax=2.0,Decline (Nov-Dec 14),10.0035515
+WA2014,RIG-Net-GI Rmax=2.0,Tail (Jan-Feb 15),8.79663
+WA2014,RIG-Net-GI Rmax=4.0,Peak (Oct-Nov 14),15.970104
+WA2014,RIG-Net-GI Rmax=4.0,Decline (Nov-Dec 14),9.938934
+WA2014,RIG-Net-GI Rmax=4.0,Tail (Jan-Feb 15),8.757285
+WA2014,RIG-Net-GI lambda=0.0,Peak (Oct-Nov 14),16.177822
+WA2014,RIG-Net-GI lambda=0.0,Decline (Nov-Dec 14),10.00847
+WA2014,RIG-Net-GI lambda=0.0,Tail (Jan-Feb 15),8.923678
+WA2014,RIG-Net-GI lambda=0.5,Peak (Oct-Nov 14),15.981763
+WA2014,RIG-Net-GI lambda=0.5,Decline (Nov-Dec 14),10.096312
+WA2014,RIG-Net-GI lambda=0.5,Tail (Jan-Feb 15),8.601686
+WA2014,RIG-Net-GI kappa=1.5,Peak (Oct-Nov 14),16.563047
+WA2014,RIG-Net-GI kappa=1.5,Decline (Nov-Dec 14),9.970629
+WA2014,RIG-Net-GI kappa=1.5,Tail (Jan-Feb 15),8.71357
+WA2014,RIG-Net-GI gen25%,Peak (Oct-Nov 14),15.844921
+WA2014,RIG-Net-GI gen25%,Decline (Nov-Dec 14),9.525683
+WA2014,RIG-Net-GI gen25%,Tail (Jan-Feb 15),8.208788
+WA2014,RIG-Net-GI gen50%,Peak (Oct-Nov 14),15.60066
+WA2014,RIG-Net-GI gen50%,Decline (Nov-Dec 14),9.926503
+WA2014,RIG-Net-GI gen50%,Tail (Jan-Feb 15),8.528871
+WA2014,RIG-Net-GI gen75%,Peak (Oct-Nov 14),16.347723
+WA2014,RIG-Net-GI gen75%,Decline (Nov-Dec 14),9.97418
+WA2014,RIG-Net-GI gen75%,Tail (Jan-Feb 15),8.63775
+WA2014,RIG-Net-GI geo s0.5 k6,Peak (Oct-Nov 14),15.935975
+WA2014,RIG-Net-GI geo s0.5 k6,Decline (Nov-Dec 14),10.050547
+WA2014,RIG-Net-GI geo s0.5 k6,Tail (Jan-Feb 15),8.603051
+WA2014,RIG-Net-GI geo s2.0 k6,Peak (Oct-Nov 14),16.17509
+WA2014,RIG-Net-GI geo s2.0 k6,Decline (Nov-Dec 14),10.0748625
+WA2014,RIG-Net-GI geo s2.0 k6,Tail (Jan-Feb 15),8.879553
+WA2014,RIG-Net-GI geo s1.0 k3,Peak (Oct-Nov 14),16.477915
+WA2014,RIG-Net-GI geo s1.0 k3,Decline (Nov-Dec 14),9.935929
+WA2014,RIG-Net-GI geo s1.0 k3,Tail (Jan-Feb 15),8.729963
+WA2014,RIG-Net-GI geo s1.0 k12,Peak (Oct-Nov 14),15.806764
+WA2014,RIG-Net-GI geo s1.0 k12,Decline (Nov-Dec 14),10.086203
+WA2014,RIG-Net-GI geo s1.0 k12,Tail (Jan-Feb 15),8.685701
+WA2014,RIG-Net-GI kappa=10.0,Peak (Oct-Nov 14),16.753483
+WA2014,RIG-Net-GI kappa=10.0,Decline (Nov-Dec 14),9.966666
+WA2014,RIG-Net-GI kappa=10.0,Tail (Jan-Feb 15),8.712887
+DRC1820,Naive,Growth (Apr-Jul 19),2.5431035
+DRC1820,Naive,Plateau (Jul-Sep 19),1.9973661
+DRC1820,Naive,Decline (Sep-Dec 19),0.6566092
+DRC1820,Naive,Tail (Dec 19-Mar 20),0.42907593
+DRC1820,MA3,Growth (Apr-Jul 19),2.561542
+DRC1820,MA3,Plateau (Jul-Sep 19),2.1616113
+DRC1820,MA3,Decline (Sep-Dec 19),0.74521065
+DRC1820,MA3,Tail (Dec 19-Mar 20),0.42765173
+DRC1820,N-BEATS,Growth (Apr-Jul 19),2.3577652
+DRC1820,N-BEATS,Plateau (Jul-Sep 19),1.7937328
+DRC1820,N-BEATS,Decline (Sep-Dec 19),0.674447
+DRC1820,N-BEATS,Tail (Dec 19-Mar 20),0.36888152
+DRC1820,AGCRN,Growth (Apr-Jul 19),2.9444544
+DRC1820,AGCRN,Plateau (Jul-Sep 19),2.1909118
+DRC1820,AGCRN,Decline (Sep-Dec 19),0.775404
+DRC1820,AGCRN,Tail (Dec 19-Mar 20),0.47911844
+DRC1820,MTGNN,Growth (Apr-Jul 19),2.3268812
+DRC1820,MTGNN,Plateau (Jul-Sep 19),1.7427238
+DRC1820,MTGNN,Decline (Sep-Dec 19),0.6726319
+DRC1820,MTGNN,Tail (Dec 19-Mar 20),0.38904396
+DRC1820,Cola-GNN,Growth (Apr-Jul 19),2.3091404
+DRC1820,Cola-GNN,Plateau (Jul-Sep 19),1.8231934
+DRC1820,Cola-GNN,Decline (Sep-Dec 19),0.69739705
+DRC1820,Cola-GNN,Tail (Dec 19-Mar 20),0.37331355
+DRC1820,Autoformer,Growth (Apr-Jul 19),3.0260894
+DRC1820,Autoformer,Plateau (Jul-Sep 19),2.1940591
+DRC1820,Autoformer,Decline (Sep-Dec 19),0.88023764
+DRC1820,Autoformer,Tail (Dec 19-Mar 20),0.67600715
+DRC1820,EpiGNN,Growth (Apr-Jul 19),2.376982
+DRC1820,EpiGNN,Plateau (Jul-Sep 19),1.7652241
+DRC1820,EpiGNN,Decline (Sep-Dec 19),0.620566
+DRC1820,EpiGNN,Tail (Dec 19-Mar 20),0.35546422
+DRC1820,STID,Growth (Apr-Jul 19),2.3785043
+DRC1820,STID,Plateau (Jul-Sep 19),1.7107235
+DRC1820,STID,Decline (Sep-Dec 19),0.6271203
+DRC1820,STID,Tail (Dec 19-Mar 20),0.42335624
+DRC1820,MepoGNN,Growth (Apr-Jul 19),4.174182
+DRC1820,MepoGNN,Plateau (Jul-Sep 19),2.1239624
+DRC1820,MepoGNN,Decline (Sep-Dec 19),0.6046918
+DRC1820,MepoGNN,Tail (Dec 19-Mar 20),0.30392095
+DRC1820,DLinear,Growth (Apr-Jul 19),2.3696492
+DRC1820,DLinear,Plateau (Jul-Sep 19),1.8261964
+DRC1820,DLinear,Decline (Sep-Dec 19),0.6719105
+DRC1820,DLinear,Tail (Dec 19-Mar 20),0.42215335
+DRC1820,N-HiTS,Growth (Apr-Jul 19),2.4003334
+DRC1820,N-HiTS,Plateau (Jul-Sep 19),1.775491
+DRC1820,N-HiTS,Decline (Sep-Dec 19),0.6925574
+DRC1820,N-HiTS,Tail (Dec 19-Mar 20),0.347254
+DRC1820,PatchTST,Growth (Apr-Jul 19),2.3982046
+DRC1820,PatchTST,Plateau (Jul-Sep 19),1.9537933
+DRC1820,PatchTST,Decline (Sep-Dec 19),0.6023993
+DRC1820,PatchTST,Tail (Dec 19-Mar 20),0.33381185
+DRC1820,TimesNet,Growth (Apr-Jul 19),3.0897493
+DRC1820,TimesNet,Plateau (Jul-Sep 19),2.094896
+DRC1820,TimesNet,Decline (Sep-Dec 19),1.076841
+DRC1820,TimesNet,Tail (Dec 19-Mar 20),0.71196014
+DRC1820,TSMixer,Growth (Apr-Jul 19),3.0340986
+DRC1820,TSMixer,Plateau (Jul-Sep 19),2.178065
+DRC1820,TSMixer,Decline (Sep-Dec 19),0.88242674
+DRC1820,TSMixer,Tail (Dec 19-Mar 20),0.6993612
+DRC1820,STAEformer,Growth (Apr-Jul 19),2.6046677
+DRC1820,STAEformer,Plateau (Jul-Sep 19),1.7445642
+DRC1820,STAEformer,Decline (Sep-Dec 19),0.6100494
+DRC1820,STAEformer,Tail (Dec 19-Mar 20),0.36801592
+DRC1820,iTransformer,Growth (Apr-Jul 19),2.3849294
+DRC1820,iTransformer,Plateau (Jul-Sep 19),1.9419068
+DRC1820,iTransformer,Decline (Sep-Dec 19),0.6158556
+DRC1820,iTransformer,Tail (Dec 19-Mar 20),0.33032298
+DRC1820,MAST-Net,Growth (Apr-Jul 19),3.0834157
+DRC1820,MAST-Net,Plateau (Jul-Sep 19),1.7683672
+DRC1820,MAST-Net,Decline (Sep-Dec 19),0.63185364
+DRC1820,MAST-Net,Tail (Dec 19-Mar 20),0.3577003
+DRC1820,RIG-Net,Growth (Apr-Jul 19),2.5331895
+DRC1820,RIG-Net,Plateau (Jul-Sep 19),1.7834133
+DRC1820,RIG-Net,Decline (Sep-Dec 19),0.50359195
+DRC1820,RIG-Net,Tail (Dec 19-Mar 20),0.2884528
+DRC1820,RIG-Net w/o renewal (direct head),Growth (Apr-Jul 19),2.395115
+DRC1820,RIG-Net w/o renewal (direct head),Plateau (Jul-Sep 19),1.7209133
+DRC1820,RIG-Net w/o renewal (direct head),Decline (Sep-Dec 19),0.5377873
+DRC1820,RIG-Net w/o renewal (direct head),Tail (Dec 19-Mar 20),0.32128704
+DRC1820,RIG-Net w/o geo graph,Growth (Apr-Jul 19),2.3642242
+DRC1820,RIG-Net w/o geo graph,Plateau (Jul-Sep 19),1.7361429
+DRC1820,RIG-Net w/o geo graph,Decline (Sep-Dec 19),0.5132184
+DRC1820,RIG-Net w/o geo graph,Tail (Dec 19-Mar 20),0.2808379
+DRC1820,RIG-Net w/o adaptive graph,Growth (Apr-Jul 19),2.4653735
+DRC1820,RIG-Net w/o adaptive graph,Plateau (Jul-Sep 19),1.7041028
+DRC1820,RIG-Net w/o adaptive graph,Decline (Sep-Dec 19),0.51178163
+DRC1820,RIG-Net w/o adaptive graph,Tail (Dec 19-Mar 20),0.2818436
+DRC1820,RIG-Net w/o dynamic graph,Growth (Apr-Jul 19),2.4461207
+DRC1820,RIG-Net w/o dynamic graph,Plateau (Jul-Sep 19),1.7617816
+DRC1820,RIG-Net w/o dynamic graph,Decline (Sep-Dec 19),0.5066092
+DRC1820,RIG-Net w/o dynamic graph,Tail (Dec 19-Mar 20),0.28299305
+DRC1820,RIG-Net w/o NB likelihood,Growth (Apr-Jul 19),2.456717
+DRC1820,RIG-Net w/o NB likelihood,Plateau (Jul-Sep 19),1.7875706
+DRC1820,RIG-Net w/o NB likelihood,Decline (Sep-Dec 19),0.5557632
+DRC1820,RIG-Net w/o NB likelihood,Tail (Dec 19-Mar 20),0.3494457
+DRC1820,RIG-Net-S (post-hoc),Growth (Apr-Jul 19),2.3744254
+DRC1820,RIG-Net-S (post-hoc),Plateau (Jul-Sep 19),1.6998084
+DRC1820,RIG-Net-S (post-hoc),Decline (Sep-Dec 19),0.48936778
+DRC1820,RIG-Net-S (post-hoc),Tail (Dec 19-Mar 20),0.29430583
+DRC1820,RIG-Net-GI,Growth (Apr-Jul 19),2.488362
+DRC1820,RIG-Net-GI,Plateau (Jul-Sep 19),1.6589878
+DRC1820,RIG-Net-GI,Decline (Sep-Dec 19),0.49511495
+DRC1820,RIG-Net-GI,Tail (Dec 19-Mar 20),0.28741682
+DRC1820,RIG-Net-GI w/o genomic prior,Growth (Apr-Jul 19),2.4481323
+DRC1820,RIG-Net-GI w/o genomic prior,Plateau (Jul-Sep 19),1.6537994
+DRC1820,RIG-Net-GI w/o genomic prior,Decline (Sep-Dec 19),0.49382186
+DRC1820,RIG-Net-GI w/o genomic prior,Tail (Dec 19-Mar 20),0.27950698
+DRC1820,RIG-Net-GI w/o intervention,Growth (Apr-Jul 19),2.3520114
+DRC1820,RIG-Net-GI w/o intervention,Plateau (Jul-Sep 19),1.6527938
+DRC1820,RIG-Net-GI w/o intervention,Decline (Sep-Dec 19),0.49841952
+DRC1820,RIG-Net-GI w/o intervention,Tail (Dec 19-Mar 20),0.2926195
+DRC1820,RIG-Net-GI w/o genomic KL,Growth (Apr-Jul 19),2.461207
+DRC1820,RIG-Net-GI w/o genomic KL,Plateau (Jul-Sep 19),1.6814494
+DRC1820,RIG-Net-GI w/o genomic KL,Decline (Sep-Dec 19),0.49698278
+DRC1820,RIG-Net-GI w/o genomic KL,Tail (Dec 19-Mar 20),0.28471717
+DRC1820,RIG-Net-GI tau=1,Growth (Apr-Jul 19),2.466523
+DRC1820,RIG-Net-GI tau=1,Plateau (Jul-Sep 19),1.685201
+DRC1820,RIG-Net-GI tau=1,Decline (Sep-Dec 19),0.50574714
+DRC1820,RIG-Net-GI tau=1,Tail (Dec 19-Mar 20),0.28112522
+DRC1820,RIG-Net-GI tau=4,Growth (Apr-Jul 19),2.5643678
+DRC1820,RIG-Net-GI tau=4,Plateau (Jul-Sep 19),1.6715199
+DRC1820,RIG-Net-GI tau=4,Decline (Sep-Dec 19),0.49568966
+DRC1820,RIG-Net-GI tau=4,Tail (Dec 19-Mar 20),0.28169993
+DRC1820,RIG-Net-GI Rmax=2.0,Growth (Apr-Jul 19),2.4994254
+DRC1820,RIG-Net-GI Rmax=2.0,Plateau (Jul-Sep 19),1.6733875
+DRC1820,RIG-Net-GI Rmax=2.0,Decline (Sep-Dec 19),0.4909483
+DRC1820,RIG-Net-GI Rmax=2.0,Tail (Dec 19-Mar 20),0.28266788
+DRC1820,RIG-Net-GI Rmax=4.0,Growth (Apr-Jul 19),2.5037355
+DRC1820,RIG-Net-GI Rmax=4.0,Plateau (Jul-Sep 19),1.7428958
+DRC1820,RIG-Net-GI Rmax=4.0,Decline (Sep-Dec 19),0.5020115
+DRC1820,RIG-Net-GI Rmax=4.0,Tail (Dec 19-Mar 20),0.27925742
+DRC1820,RIG-Net-GI lambda=0.0,Growth (Apr-Jul 19),2.461207
+DRC1820,RIG-Net-GI lambda=0.0,Plateau (Jul-Sep 19),1.6814494
+DRC1820,RIG-Net-GI lambda=0.0,Decline (Sep-Dec 19),0.49698278
+DRC1820,RIG-Net-GI lambda=0.0,Tail (Dec 19-Mar 20),0.28471717
+DRC1820,RIG-Net-GI lambda=0.5,Growth (Apr-Jul 19),2.478017
+DRC1820,RIG-Net-GI lambda=0.5,Plateau (Jul-Sep 19),1.6784325
+DRC1820,RIG-Net-GI lambda=0.5,Decline (Sep-Dec 19),0.49870685
+DRC1820,RIG-Net-GI lambda=0.5,Tail (Dec 19-Mar 20),0.28267542
+DRC1820,RIG-Net-GI kappa=1.5,Growth (Apr-Jul 19),2.4425287
+DRC1820,RIG-Net-GI kappa=1.5,Plateau (Jul-Sep 19),1.6779852
+DRC1820,RIG-Net-GI kappa=1.5,Decline (Sep-Dec 19),0.49956897
+DRC1820,RIG-Net-GI kappa=1.5,Tail (Dec 19-Mar 20),0.28112525
+DRC1820,RIG-Net-GI gen25%,Growth (Apr-Jul 19),2.3949711
+DRC1820,RIG-Net-GI gen25%,Plateau (Jul-Sep 19),1.6737705
+DRC1820,RIG-Net-GI gen25%,Decline (Sep-Dec 19),0.5064655
+DRC1820,RIG-Net-GI gen25%,Tail (Dec 19-Mar 20),0.28583634
+DRC1820,RIG-Net-GI gen50%,Growth (Apr-Jul 19),2.4583333
+DRC1820,RIG-Net-GI gen50%,Plateau (Jul-Sep 19),1.6614943
+DRC1820,RIG-Net-GI gen50%,Decline (Sep-Dec 19),0.5
+DRC1820,RIG-Net-GI gen50%,Tail (Dec 19-Mar 20),0.28701603
+DRC1820,RIG-Net-GI gen75%,Growth (Apr-Jul 19),2.4948275
+DRC1820,RIG-Net-GI gen75%,Plateau (Jul-Sep 19),1.7188379
+DRC1820,RIG-Net-GI gen75%,Decline (Sep-Dec 19),0.49841952
+DRC1820,RIG-Net-GI gen75%,Tail (Dec 19-Mar 20),0.28281912
+DRC1820,RIG-Net-GI geo s0.5 k6,Growth (Apr-Jul 19),2.4436781
+DRC1820,RIG-Net-GI geo s0.5 k6,Plateau (Jul-Sep 19),1.6581898
+DRC1820,RIG-Net-GI geo s0.5 k6,Decline (Sep-Dec 19),0.50402296
+DRC1820,RIG-Net-GI geo s0.5 k6,Tail (Dec 19-Mar 20),0.27822143
+DRC1820,RIG-Net-GI geo s2.0 k6,Growth (Apr-Jul 19),2.4974136
+DRC1820,RIG-Net-GI geo s2.0 k6,Plateau (Jul-Sep 19),1.6626598
+DRC1820,RIG-Net-GI geo s2.0 k6,Decline (Sep-Dec 19),0.49770114
+DRC1820,RIG-Net-GI geo s2.0 k6,Tail (Dec 19-Mar 20),0.27822143
+DRC1820,RIG-Net-GI geo s1.0 k3,Growth (Apr-Jul 19),2.480747
+DRC1820,RIG-Net-GI geo s1.0 k3,Plateau (Jul-Sep 19),1.6780492
+DRC1820,RIG-Net-GI geo s1.0 k3,Decline (Sep-Dec 19),0.5045977
+DRC1820,RIG-Net-GI geo s1.0 k3,Tail (Dec 19-Mar 20),0.2787961
+DRC1820,RIG-Net-GI geo s1.0 k12,Growth (Apr-Jul 19),2.4876437
+DRC1820,RIG-Net-GI geo s1.0 k12,Plateau (Jul-Sep 19),1.6608557
+DRC1820,RIG-Net-GI geo s1.0 k12,Decline (Sep-Dec 19),0.50028735
+DRC1820,RIG-Net-GI geo s1.0 k12,Tail (Dec 19-Mar 20),0.28037658
+DRC1820,RIG-Net-GI kappa=10.0,Growth (Apr-Jul 19),2.5208333
+DRC1820,RIG-Net-GI kappa=10.0,Plateau (Jul-Sep 19),1.7065293
+DRC1820,RIG-Net-GI kappa=10.0,Decline (Sep-Dec 19),0.4946839
+DRC1820,RIG-Net-GI kappa=10.0,Tail (Dec 19-Mar 20),0.28062615

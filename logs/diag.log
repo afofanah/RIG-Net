@@ -1,0 +1,28 @@
+WA2014 {
+ "graph_gate_share": {
+  "geo": 0.6709763407707214,
+  "adaptive": 0.12943999469280243,
+  "dynamic": 0.19958370923995972
+ },
+ "best_baseline": "MTGNN",
+ "rho_by_group": {
+  "GIN": 0.102,
+  "LBR": 0.133,
+  "SLE": 0.121
+ },
+ "R_median_active": 1.1068001985549927,
+ "R_median_inactive": 0.3045912981033325
+}
+DRC1820 {
+ "graph_gate_share": {
+  "geo": 0.5204012989997864,
+  "adaptive": 0.34679079055786133,
+  "dynamic": 0.1328078806400299
+ },
+ "best_baseline": "MTGNN",
+ "rho_by_group": {
+  "DRC": 0.17
+ },
+ "R_median_active": 0.9140704274177551,
+ "R_median_inactive": 0.5202728509902954
+}

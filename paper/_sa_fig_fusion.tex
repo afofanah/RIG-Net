@@ -1,0 +1,120 @@
+\documentclass[border=2pt]{standalone}
+\usepackage{amsmath,amssymb,xcolor,tikz}
+\usetikzlibrary{positioning,arrows.meta,calc,shapes.geometric,fit,backgrounds,bending}
+\begin{document}
+\definecolor{boxcol}{RGB}{52,86,122}%
+\begin{tikzpicture}[
+  font=\small, x=1cm, y=1cm,
+  >={Stealth[length=3.6mm, width=2.6mm]},
+  rg/.style={circle, draw=black!65, fill=white, inner sep=0pt, minimum size=7mm, font=\small},
+  foc/.style={rg, draw=black, line width=1.1pt, fill=yellow!25},
+  blk/.style={draw=black!70, rounded corners=2pt, align=center, inner sep=4pt, fill=white},
+  op/.style={blk, fill=black!5, font=\small},
+  cell/.style={draw=black!45, minimum size=6.4mm, inner sep=0pt, font=\normalsize},
+  f/.style={->, draw=black!65, line width=1.2pt},
+  F/.style={->, draw=black!85, line width=1.9pt},
+  lbl/.style={font=\normalsize, text=black!75, inner sep=2pt},
+  blbl/.style={font=\large, text=black!80, inner sep=2pt},
+  wt/.style={font=\large, inner sep=2pt},
+  grp/.style={draw=boxcol, dashed, dash pattern=on 2.2pt off 1.6pt, rounded corners=4pt,
+              inner sep=7pt, line width=1.3pt}
+]
+
+% five regions, identical layout in every panel; i is the focal region
+\def\nodelayout{
+  \node[foc] (n1) at (0.00,1.35) {$i$};
+  \node[rg]  (n2) at (1.35,1.68) {$j$};
+  \node[rg]  (n3) at (1.82,0.45) {$k$};
+  \node[rg]  (n4) at (0.60,0.03) {$l$};
+  \node[rg]  (n5) at (-0.60,0.60) {$m$};
+}
+% row of A_{i,:} as five shaded cells: #1 x-origin, #2..#6 fills
+\newcommand{\rowstrip}[7]{%
+  \node[blbl, anchor=south] at (#1+1.1,-2.32) {#7};
+  \foreach \c [count=\q from 0] in {#2,#3,#4,#5,#6}
+    \node[cell, fill=\c] at (#1+0.55*\q,-2.75) {};
+  \foreach \t [count=\q from 0] in {i,j,k,l,m}
+    \node[font=\normalsize, text=black!60] at (#1+0.55*\q,-3.25) {$\t$};
+}
+
+%% ---------------- (a) the four adjacencies ----------------
+\begin{scope}[shift={(0,0)}]
+  \nodelayout
+  \draw[teal!70, line width=1.0pt] (n1)--(n2) (n1)--(n5) (n2)--(n3) (n3)--(n4) (n4)--(n5) (n1)--(n4);
+  \node[lbl, anchor=north, text width=46mm, align=center] (la) at (0.6,-0.45) {$A^{\mathrm{geo}}$: distance kernel\\[-1pt]\textcolor{teal!70}{fixed, 6-NN sparsified}};
+  \begin{scope}[on background layer]\node[grp, fit=(n1)(n2)(n3)(n4)(n5)(la)] {};\end{scope}
+\end{scope}
+\begin{scope}[shift={(6.1,0)}]
+  \nodelayout
+  \draw[blue!65, line width=1.1pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n5) to (n1);
+  \draw[blue!65, line width=1.4pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n1) to (n2);
+  \draw[blue!65, line width=1.1pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n4) to (n3);
+  \draw[blue!65, line width=1.1pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n3) to (n2);
+  \node[lbl, anchor=north, text width=48mm, align=center] (lb) at (0.6,-0.45) {$A^{\mathrm{adp}}$: learned, static\\[-1pt]\textcolor{blue!65}{$\mathrm{softmax}(\mathrm{ReLU}(E_1E_2^{\!\top}))$}};
+  \begin{scope}[on background layer]\node[grp, fit=(n1)(n2)(n3)(n4)(n5)(lb)] {};\end{scope}
+\end{scope}
+\begin{scope}[shift={(12.2,0)}]
+  \nodelayout
+  \draw[orange!80, line width=0.9pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n2) to (n1);
+  \draw[orange!80, line width=1.6pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n4) to (n1);
+  \draw[orange!80, line width=1.2pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n5) to (n1);
+  \draw[orange!80, line width=0.9pt, ->, shorten >=2.5pt, shorten <=2.5pt] (n3) to (n2);
+  \node[lbl, anchor=north, text width=50mm, align=center] (lc) at (0.6,-0.45) {$A^{\mathrm{dyn}}$: attention on $\mathbf{h}$\\[-1pt]\textcolor{orange!85}{changes every forecast origin}};
+  \begin{scope}[on background layer]\node[grp, fit=(n1)(n2)(n3)(n4)(n5)(lc)] {};\end{scope}
+\end{scope}
+\begin{scope}[shift={(18.3,0)}]
+  \nodelayout
+  \draw[purple!70, line width=2.2pt] (n1)--(n3);
+  \draw[purple!70, line width=1.2pt] (n2)--(n4);
+  \draw[purple!70, line width=0.8pt] (n1)--(n2);
+  \node[rg, fill=black!10, draw=black!35] at (-0.60,0.60) {$m$};
+  \node[lbl, anchor=north, text width=50mm, align=center] (ld) at (0.6,-0.45) {$A^{\mathrm{gen}}$: genomic linkage\\[-1pt]\textcolor{purple!70}{genomes before the cut-off}};
+  \begin{scope}[on background layer]\node[grp, fit=(n1)(n2)(n3)(n4)(n5)(ld)] {};\end{scope}
+\end{scope}
+
+%% ---------------- (b) row i of each adjacency, weighted by the gate ----------------
+\rowstrip{-0.55}{white}{teal!55}{white}{teal!35}{teal!55}{$A^{\mathrm{geo}}_{i,:}$}
+\rowstrip{5.55}{white}{white}{blue!50}{white}{white}{$A^{\mathrm{adp}}_{i,:}$}
+\rowstrip{11.65}{white}{orange!40}{white}{orange!70}{white}{$A^{\mathrm{dyn}}_{i,:}$}
+\rowstrip{17.75}{white}{purple!30}{purple!75}{white}{black!12}{$A^{\mathrm{gen}}_{i,:}$}
+
+
+\node[wt, text=teal!60!black]   at (1.55,-3.95) {$\times\,\pi_{i,\mathrm{geo}}$};
+\node[wt, text=blue!65]         at (7.65,-3.95) {$\times\,\pi_{i,\mathrm{adp}}$};
+\node[wt, text=orange!85!black] at (13.75,-3.95) {$\times\,\pi_{i,\mathrm{dyn}}$};
+\node[wt, text=purple!70]       at (19.85,-3.95) {$\times\,\pi_{i,\mathrm{gen}}$};
+
+\foreach \x in {1.55,7.65,13.75,19.85} \draw[f] (\x,-3.4) -- (\x,-3.75);
+\foreach \x in {1.55,7.65,13.75,19.85} \draw[f, -] (\x,-4.15) -- (\x,-4.85);
+
+
+%% ---------------- (c) the fused row, gate and message passing ----------------
+% all three blocks share one width and one centre line at x = 26.0
+\node[op, anchor=north, text width=54mm] (gate) at (26.0,2.00)
+  {per-region gate $\pi_i=\mathrm{softmax}(W_\pi\mathbf{h}_i)\in\Delta^{3}$};
+\node[op, anchor=north, text width=54mm] (kl) at (26.0,0.70)
+  {KL: $A^{\mathrm{gen}}_{i,:}\,\|\,A^{\mathrm{adp}}_{i,:}$ \ (Eq.~8)};
+\node[op, anchor=north, text width=54mm] (mp) at (26.0,-0.95)
+  {$\mathbf{g}_i\!\leftarrow\!\mathrm{LN}\big(\mathbf{g}_i+\mathrm{GELU}(W\!\sum_j A_{ij}\mathbf{g}_j)\big)$, $\times2$};
+
+% dashed group encloses only the two gating blocks
+\begin{scope}[on background layer]
+  \node[grp, draw=boxcol, line width=1.6pt, fit=(gate)(kl)] (gbox) {};
+\end{scope}
+
+% fused row
+\node[blbl, anchor=east] (frow) at (25.65,-2.32) {$A_{i,:}=\sum_k \pi_{ik}A^{k}_{i,:}$};
+\foreach \c [count=\q from 0] in {white,teal!40,purple!55,orange!45,teal!25}
+  \node[cell, fill=\c, draw=black!75, line width=0.9pt] at (24.9+0.55*\q,-2.8) {};
+\foreach \t [count=\q from 0] in {i,j,k,l,m}
+  \node[font=\normalsize, text=black!60] at (24.9+0.55*\q,-3.3) {$\t$};
+\node[blbl, anchor=north, text width=60mm, align=center] (rs) at (26.0,-3.65)
+  {row-stochastic (Lem.~1)};
+
+% arrows: gate -> KL -> message passing ; fused row -> message passing
+\draw[f] (gate.south) -- (kl.north);
+\draw[f, draw=purple!60, dashed] (kl.south) -- (mp.north);
+\draw[F] (26.0,-2.5) -- (mp.south);
+\draw[f] (1.55,-4.85) -- (26.0,-4.85) -- (26.0,-4.35);
+\end{tikzpicture}%
+\end{document}

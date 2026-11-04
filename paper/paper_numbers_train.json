@@ -1,0 +1,344 @@
+{
+ "summary": [
+  {
+   "dataset": "WA2014",
+   "model": "N-BEATS",
+   "lr": 0.001,
+   "best_val": 15.7227201461792,
+   "best_epoch": 32,
+   "epochs_run": 74,
+   "sec": 1.9121487140655518,
+   "params": 15774
+  },
+  {
+   "dataset": "WA2014",
+   "model": "AGCRN",
+   "lr": 0.003,
+   "best_val": 16.37494659423828,
+   "best_epoch": 160,
+   "epochs_run": 202,
+   "sec": 33.270559787750244,
+   "params": 52076
+  },
+  {
+   "dataset": "WA2014",
+   "model": "MTGNN",
+   "lr": 0.003,
+   "best_val": 15.862712860107422,
+   "best_epoch": 50,
+   "epochs_run": 92,
+   "sec": 6.496422529220581,
+   "params": 8420
+  },
+  {
+   "dataset": "WA2014",
+   "model": "Cola-GNN",
+   "lr": 0.003,
+   "best_val": 15.968852043151855,
+   "best_epoch": 98,
+   "epochs_run": 140,
+   "sec": 16.59648036956787,
+   "params": 6326
+  },
+  {
+   "dataset": "WA2014",
+   "model": "Autoformer",
+   "lr": 0.003,
+   "best_val": 19.501224517822266,
+   "best_epoch": 22,
+   "epochs_run": 64,
+   "sec": 1.719067096710205,
+   "params": 55440
+  },
+  {
+   "dataset": "WA2014",
+   "model": "EpiGNN",
+   "lr": 0.003,
+   "best_val": 16.295984268188477,
+   "best_epoch": 51,
+   "epochs_run": 93,
+   "sec": 2.4670488834381104,
+   "params": 5718
+  },
+  {
+   "dataset": "WA2014",
+   "model": "STID",
+   "lr": 0.001,
+   "best_val": 15.759758949279785,
+   "best_epoch": 24,
+   "epochs_run": 66,
+   "sec": 1.0086157321929932,
+   "params": 27396
+  },
+  {
+   "dataset": "WA2014",
+   "model": "MepoGNN",
+   "lr": 0.003,
+   "best_val": 19.332223892211914,
+   "best_epoch": 34,
+   "epochs_run": 76,
+   "sec": 1.5145859718322754,
+   "params": 4661
+  },
+  {
+   "dataset": "WA2014",
+   "model": "DLinear",
+   "lr": 0.003,
+   "best_val": 16.144731521606445,
+   "best_epoch": 150,
+   "epochs_run": 192,
+   "sec": 0.9238026142120361,
+   "params": 56
+  },
+  {
+   "dataset": "WA2014",
+   "model": "N-HiTS",
+   "lr": 0.001,
+   "best_val": 16.24880599975586,
+   "best_epoch": 27,
+   "epochs_run": 69,
+   "sec": 0.8884978294372559,
+   "params": 15066
+  },
+  {
+   "dataset": "WA2014",
+   "model": "PatchTST",
+   "lr": 0.003,
+   "best_val": 17.459304809570312,
+   "best_epoch": 7,
+   "epochs_run": 49,
+   "sec": 5.118008613586426,
+   "params": 17988
+  },
+  {
+   "dataset": "WA2014",
+   "model": "TimesNet",
+   "lr": 0.001,
+   "best_val": 15.500190734863281,
+   "best_epoch": 118,
+   "epochs_run": 160,
+   "sec": 5.555005788803101,
+   "params": 24739
+  },
+  {
+   "dataset": "WA2014",
+   "model": "TSMixer",
+   "lr": 0.003,
+   "best_val": 18.114856719970703,
+   "best_epoch": 19,
+   "epochs_run": 61,
+   "sec": 0.6386830806732178,
+   "params": 16466
+  },
+  {
+   "dataset": "WA2014",
+   "model": "STAEformer",
+   "lr": 0.003,
+   "best_val": 16.532934188842773,
+   "best_epoch": 36,
+   "epochs_run": 78,
+   "sec": 17.393962860107422,
+   "params": 33348
+  },
+  {
+   "dataset": "WA2014",
+   "model": "iTransformer",
+   "lr": 0.003,
+   "best_val": 16.8956298828125,
+   "best_epoch": 12,
+   "epochs_run": 54,
+   "sec": 1.939222812652588,
+   "params": 17444
+  },
+  {
+   "dataset": "WA2014",
+   "model": "MAST-Net",
+   "lr": 0.001,
+   "best_val": 15.008180618286133,
+   "best_epoch": 279,
+   "epochs_run": 300,
+   "sec": 26.005531311035156,
+   "params": 40277
+  },
+  {
+   "dataset": "WA2014",
+   "model": "RIG-Net-GI",
+   "lr": 0.003,
+   "best_val": 15.617539405822754,
+   "best_epoch": 37,
+   "epochs_run": 79,
+   "sec": 6.4793291091918945,
+   "params": 41362
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "N-BEATS",
+   "lr": 0.001,
+   "best_val": 2.356909990310669,
+   "best_epoch": 27,
+   "epochs_run": 69,
+   "sec": 0.9220404624938965,
+   "params": 15774
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "AGCRN",
+   "lr": 0.001,
+   "best_val": 2.8343307971954346,
+   "best_epoch": 219,
+   "epochs_run": 261,
+   "sec": 15.440829992294312,
+   "params": 51820
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "MTGNN",
+   "lr": 0.003,
+   "best_val": 2.2940425872802734,
+   "best_epoch": 87,
+   "epochs_run": 129,
+   "sec": 5.145747184753418,
+   "params": 7396
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "Cola-GNN",
+   "lr": 0.003,
+   "best_val": 2.324018716812134,
+   "best_epoch": 80,
+   "epochs_run": 122,
+   "sec": 5.114598989486694,
+   "params": 6326
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "Autoformer",
+   "lr": 0.003,
+   "best_val": 3.0314254760742188,
+   "best_epoch": 10,
+   "epochs_run": 52,
+   "sec": 0.6095104217529297,
+   "params": 29712
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "EpiGNN",
+   "lr": 0.003,
+   "best_val": 2.3589835166931152,
+   "best_epoch": 63,
+   "epochs_run": 105,
+   "sec": 2.1942660808563232,
+   "params": 5718
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "STID",
+   "lr": 0.001,
+   "best_val": 2.328084707260132,
+   "best_epoch": 27,
+   "epochs_run": 69,
+   "sec": 1.1998291015625,
+   "params": 26372
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "MepoGNN",
+   "lr": 0.003,
+   "best_val": 2.9272451400756836,
+   "best_epoch": 39,
+   "epochs_run": 81,
+   "sec": 1.6642506122589111,
+   "params": 4117
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "DLinear",
+   "lr": 0.003,
+   "best_val": 2.380720376968384,
+   "best_epoch": 299,
+   "epochs_run": 300,
+   "sec": 1.6890366077423096,
+   "params": 56
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "N-HiTS",
+   "lr": 0.003,
+   "best_val": 2.302816152572632,
+   "best_epoch": 8,
+   "epochs_run": 50,
+   "sec": 0.6642615795135498,
+   "params": 15066
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "PatchTST",
+   "lr": 0.001,
+   "best_val": 2.4557182788848877,
+   "best_epoch": 27,
+   "epochs_run": 69,
+   "sec": 7.522379636764526,
+   "params": 17988
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "TimesNet",
+   "lr": 0.003,
+   "best_val": 2.8439009189605713,
+   "best_epoch": 21,
+   "epochs_run": 63,
+   "sec": 1.2523517608642578,
+   "params": 22659
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "TSMixer",
+   "lr": 0.003,
+   "best_val": 2.7374744415283203,
+   "best_epoch": 68,
+   "epochs_run": 110,
+   "sec": 1.1225395202636719,
+   "params": 7954
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "STAEformer",
+   "lr": 0.001,
+   "best_val": 2.338137626647949,
+   "best_epoch": 63,
+   "epochs_run": 105,
+   "sec": 16.86523985862732,
+   "params": 30276
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "iTransformer",
+   "lr": 0.003,
+   "best_val": 2.4372706413269043,
+   "best_epoch": 8,
+   "epochs_run": 50,
+   "sec": 1.454514980316162,
+   "params": 17444
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "MAST-Net",
+   "lr": 0.003,
+   "best_val": 2.3561320304870605,
+   "best_epoch": 37,
+   "epochs_run": 79,
+   "sec": 6.578423976898193,
+   "params": 34133
+  },
+  {
+   "dataset": "DRC1820",
+   "model": "RIG-Net-GI",
+   "lr": 0.003,
+   "best_val": 2.341379404067993,
+   "best_epoch": 10,
+   "epochs_run": 52,
+   "sec": 3.8800580501556396,
+   "params": 41098
+  }
+ ]
+}
